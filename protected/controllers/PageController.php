@@ -37,7 +37,7 @@ class PageController extends Controller {
                 $page->id = uniqid();
                 if ($page->validate()) {
                     if ($this->pageNameExists($page->pageName, $page->id)) {
-                        $page->addError($attribute, "Page already exists");
+                        $page->addError("pageName", "Page already exists");
                         $valid = false;
                     }
                     if ($valid) {
