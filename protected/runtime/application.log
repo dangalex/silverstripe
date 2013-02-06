@@ -1,0 +1,750 @@
+2013/02/05 23:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in C:\wamp\www\silverstripe\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(270): CController->missingAction('contact')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/silverstripe/index.php?r=site/contact
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=site/login
+---
+2013/02/06 00:23:14 [error] [exception.CException] exception 'CException' with message 'PageController cannot find the requested view "notfound".' in C:\wamp\www\silverstripe\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('notfound', Array, true)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(20): CController->render('notfound', Array)
+#2 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#8 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/index
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=site/page&view=about
+---
+2013/02/06 00:30:46 [error] [exception.CException] exception 'CException' with message 'Property "PageController.allPages" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\layouts\main.php(46): CComponent->__get('allPages')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#10 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#12 C:\wamp\www\silverstripe\protected\controllers\PageController.php(20): CController->render('notfound', Array)
+#13 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#14 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#19 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/index
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=site/login
+---
+2013/02/06 00:41:17 [error] [exception.CException] exception 'CException' with message 'Property "PageController.allPages" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): CComponent->__set('allPages', Array)
+#1 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#7 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/index
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=site/login
+---
+2013/02/06 00:42:56 [error] [exception.CException] exception 'CException' with message 'Property "PageController.allPages" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\controllers\PageController.php(13): CComponent->__set('allPages', Array)
+#1 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#7 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/index
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=site/login
+---
+2013/02/06 00:43:19 [error] [exception.CException] exception 'CException' with message 'PageController and its behaviors do not have a method or closure named "url".' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CComponent->__call('url', Array)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): PageController->url('page', 'edit')
+#2 C:\wamp\www\silverstripe\protected\views\layouts\main.php(43): PageController->buildLeftMenu()
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#6 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#7 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#9 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#10 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#12 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#14 C:\wamp\www\silverstripe\protected\controllers\PageController.php(22): CController->render('notfound', Array)
+#15 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#20 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#21 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/index
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=site/login
+---
+2013/02/06 00:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\wamp\www\silverstripe\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#3 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/index
+---
+2013/02/06 00:53:10 [error] [exception.Exception] exception 'Exception' with message 'Invalid store name' in C:\wamp\www\silverstripe\DataStore.php:15
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(35): DataStore->__construct(NULL)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): Controller->dataStore()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(359): PageController->__construct('page', NULL)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('page/create')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 00:54:25 [error] [exception.Exception] exception 'Exception' with message 'Invalid store name' in C:\wamp\www\silverstripe\DataStore.php:15
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(35): DataStore->__construct(NULL)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): Controller->dataStore()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(359): PageController->__construct('page', NULL)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('page/create')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 00:54:35 [error] [exception.Exception] exception 'Exception' with message 'Invalid store name' in C:\wamp\www\silverstripe\DataStore.php:15
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(35): DataStore->__construct(NULL)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): Controller->dataStore()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(359): PageController->__construct('page', NULL)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('page/create')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 00:55:08 [error] [exception.Exception] exception 'Exception' with message 'Invalid store name' in C:\wamp\www\silverstripe\DataStore.php:15
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(35): DataStore->__construct(NULL)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): Controller->dataStore()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(359): PageController->__construct('page', NULL)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('page/create')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 00:55:09 [error] [exception.Exception] exception 'Exception' with message 'Invalid store name' in C:\wamp\www\silverstripe\DataStore.php:15
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(35): DataStore->__construct(NULL)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): Controller->dataStore()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(359): PageController->__construct('page', NULL)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('page/create')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 00:55:17 [error] [exception.Exception] exception 'Exception' with message 'Invalid store name' in C:\wamp\www\silverstripe\DataStore.php:15
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(35): DataStore->__construct(NULL)
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(11): Controller->dataStore()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(359): PageController->__construct('page', NULL)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('page/index')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/index
+---
+2013/02/06 01:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/silverstripe/index.php?r=gii
+---
+2013/02/06 01:02:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Page" for active record class "Page" cannot be found in the database.' in C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Page))
+#1 C:\wamp\www\silverstripe\yii\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord::model('Page')
+#2 C:\wamp\www\silverstripe\yii\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#3 C:\wamp\www\silverstripe\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#4 C:\wamp\www\silverstripe\yii\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#5 C:\wamp\www\silverstripe\yii\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#6 C:\wamp\www\silverstripe\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#13 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/silverstripe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=gii/crud
+---
+2013/02/06 01:02:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Page" for active record class "Page" cannot be found in the database.' in C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Page))
+#1 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Page')
+#2 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\wamp\www\silverstripe\yii\framework\gii\generators\form\FormCode.php(91): CActiveRecord->__construct('')
+#4 C:\wamp\www\silverstripe\yii\framework\gii\generators\form\templates\default\form.php(25): FormCode->getModelAttributes()
+#5 C:\wamp\www\silverstripe\yii\framework\gii\CCodeModel.php(319): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\gii\generators\form\FormCode.php(80): CCodeModel->render('C:\wamp\www\sil...')
+#7 C:\wamp\www\silverstripe\yii\framework\gii\CCodeGenerator.php(162): FormCode->prepare()
+#8 C:\wamp\www\silverstripe\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#9 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#10 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/form')
+#15 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/silverstripe/index.php?r=gii/form
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=gii/form
+---
+2013/02/06 01:04:07 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Page" for active record class "Page" cannot be found in the database.' in C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Page))
+#1 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Page')
+#2 C:\wamp\www\silverstripe\yii\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\wamp\www\silverstripe\protected\controllers\PageController.php(31): CActiveRecord->__construct()
+#4 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#5 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#10 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:05:03 [error] [exception.CException] exception 'CException' with message 'Property "Page.id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\page\_form.php(10): CComponent->__get('id')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#10 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#16 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:05:56 [error] [exception.CException] exception 'CException' with message 'Property "Page.id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\page\_form.php(10): CComponent->__get('id')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#10 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#16 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:07:18 [error] [exception.CException] exception 'CException' with message 'Property "Page.id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\page\_form.php(10): CComponent->__get('id')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#10 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#16 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:07:23 [error] [exception.CException] exception 'CException' with message 'Property "Page.id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\page\_form.php(10): CComponent->__get('id')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#10 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#16 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:07:24 [error] [exception.CException] exception 'CException' with message 'Property "Page.id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\page\_form.php(10): CComponent->__get('id')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#10 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#16 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:07:25 [error] [exception.CException] exception 'CException' with message 'Property "Page.id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\page\_form.php(10): CComponent->__get('id')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#7 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#10 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#11 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#16 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:08:59 [error] [exception.CException] exception 'CException' with message 'PageController contains improperly nested widget tags in its view "C:\wamp\www\silverstripe\protected\views\page\_form.php". A CActiveForm widget does not have an endWidget() call.' in C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#1 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#7 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#13 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:10:24 [error] [exception.CException] exception 'CException' with message 'PageController contains improperly nested widget tags in its view "C:\wamp\www\silverstripe\protected\views\page\_form.php". A CActiveForm widget does not have an endWidget() call.' in C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#1 C:\wamp\www\silverstripe\protected\views\page\create.php(3): CController->renderPartial('_form', Array)
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): CController->render('create', Array)
+#7 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#13 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:46:52 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:46:52 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:46:52 [error] [exception.CException] exception 'CException' with message 'Property "Page.__store_id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\silverstripe\DataStore.php(43): CComponent->__set('__store_id', '5111b60c6ef1a')
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): DataStore->add(Object(Page))
+#2 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#8 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:48:13 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:48:13 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:48:13 [error] [exception.CException] exception 'CException' with message 'Property "Page.__store_id" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\silverstripe\DataStore.php(43): CComponent->__set('__store_id', '5111b65d48681')
+#1 C:\wamp\www\silverstripe\protected\controllers\PageController.php(37): DataStore->add(Object(Page))
+#2 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#3 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#8 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:57:18 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:57:18 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:58:35 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:58:35 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 01:58:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\silverstripe\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/view')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/view&0=5111b8cbac551
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\silverstripe\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#4 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/view')
+#5 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/view&0=5111b8cbac551
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 01:59:38 [error] [exception.CException] exception 'CException' with message 'Property "Page.PageName" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\controllers\PageController.php(58): CComponent->__get('PageName')
+#1 C:\wamp\www\silverstripe\protected\views\layouts\main.php(43): PageController->buildLeftMenu()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#11 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#13 C:\wamp\www\silverstripe\protected\controllers\PageController.php(44): CController->render('create', Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#15 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/create')
+#20 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/create
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/create
+---
+2013/02/06 02:09:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\wamp\www\silverstripe\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\silverstripe\yii\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/update')
+#3 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/silverstripe/index.php?r=page/update&id=5111b87e89add
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/view&id=5111b87e89add
+---
+2013/02/06 02:17:52 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:17:52 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:18:23 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:18:23 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:19:01 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:19:01 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:19:09 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:19:09 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:20:31 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:20:31 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (61)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:32:16 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:32:16 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:32:49 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:32:49 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:33:32 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:33:32 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (35)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:34:11 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (36)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:34:11 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (36)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:35:17 [warning] [application] Failed to set unsafe attribute "isHomePage" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (36)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:35:17 [warning] [application] Failed to set unsafe attribute "pageContent" of "Page".
+in C:\wamp\www\silverstripe\protected\controllers\PageController.php (36)
+in C:\wamp\www\silverstripe\index.php (13)
+2013/02/06 02:52:01 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.allPages" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(53): CComponent->__get('allPages')
+#1 C:\wamp\www\silverstripe\protected\views\layouts\main.php(46): Controller->buildLeftMenu()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#11 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#13 C:\wamp\www\silverstripe\protected\controllers\SiteController.php(76): CController->render('login', Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/silverstripe/index.php?r=site/login
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/index
+---
+2013/02/06 02:54:59 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.allPages" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(53): CComponent->__get('allPages')
+#1 C:\wamp\www\silverstripe\protected\views\layouts\main.php(46): Controller->buildLeftMenu()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#11 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#13 C:\wamp\www\silverstripe\protected\controllers\SiteController.php(76): CController->render('login', Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/silverstripe/index.php?r=site/login
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/index
+---
+2013/02/06 02:55:01 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.allPages" is not defined.' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\components\Controller.php(53): CComponent->__get('allPages')
+#1 C:\wamp\www\silverstripe\protected\views\layouts\main.php(46): Controller->buildLeftMenu()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#11 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#13 C:\wamp\www\silverstripe\protected\controllers\SiteController.php(76): CController->render('login', Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/silverstripe/index.php?r=site/login
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/index
+---
+2013/02/06 02:55:05 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "buildLeftMenu".' in C:\wamp\www\silverstripe\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\wamp\www\silverstripe\protected\views\layouts\main.php(46): CComponent->__call('buildLeftMenu', Array)
+#1 C:\wamp\www\silverstripe\protected\views\layouts\main.php(46): SiteController->buildLeftMenu()
+#2 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#3 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#4 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#5 C:\wamp\www\silverstripe\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\silverstripe\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\silverstripe\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sil...')
+#11 C:\wamp\www\silverstripe\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sil...', Array, true)
+#12 C:\wamp\www\silverstripe\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sil...', Array, true)
+#13 C:\wamp\www\silverstripe\protected\controllers\SiteController.php(76): CController->render('login', Array)
+#14 C:\wamp\www\silverstripe\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\wamp\www\silverstripe\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\silverstripe\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\silverstripe\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\wamp\www\silverstripe\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\wamp\www\silverstripe\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\wamp\www\silverstripe\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/silverstripe/index.php?r=site/login
+HTTP_REFERER=http://localhost/silverstripe/index.php?r=page/index
+---
