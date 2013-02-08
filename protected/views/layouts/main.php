@@ -43,8 +43,8 @@
 	<?php endif?>                
                 
                 <div id="wrapper">
-                    <? $this->buildLeftMenu();?>
-                   <? echo $content; ?>
+                    <?php $this->buildLeftMenu();?>
+                   <?php echo $content; ?>
                 </div>
        
 	<div class="clear"></div>
